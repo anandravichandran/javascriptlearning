@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booleans</title>
+</head>
+<body>
+     <script>
+        console.log(true);
+
+        console.log(false);
+
+        console.log(3<5);
+        console.log(3>5);
+
+        console.log(5 == '5.00');
+        //  here double equal convert both the type in single type which has 5 
+        console.log(5 === '5.00');
+        // here triple euqal doesnt make conversation of the integers to string or string to integers
+
+         if (true) {
+            console.log('hello');
+
+         }
+
+         if (false) {
+            console.log('hello world');
+
+         }
+         else{
+            console.log('hello');
+         }
+
+         if (18 >=16){
+            console.log( 'You can drive');
+         } else {
+            console.log('You can not drive');
+         }
+
+         if (15>=16){
+            console.log('You cant drive');
+         }
+         else if (15 >= 14){
+            console.log("Still you cant drive");
+
+         }
+         else {
+            console.log("you need to grow")
+         }
+
+         const age = 15;
+         if (age >=16){
+            console.log('You can drive');
+
+         }
+         else if (age >=14){
+            console.log('Almost there!');
+
+         }else {
+            console.log("You cant drive");
+         }
+
+         console.log(true && true);
+        //  o/p is true
+        //  it is and operator 
+        console.log(true && false);
+        // o/p is false
+        console.log(0.2 >= 0 && 0.2 < 1/3);
+
+        console.log(true || false);
+        console.log(!true);
+     </script>
+
+
+</body>
+</html>
+
+
+
+<!-- 
+
+* Booleans are another type of value
+-- there are only 2 boolean value: true,false
+
+What's the purpose of boolean values?
+
+* A boolean value represents whether something is true of false.
+
+* A boolean value represents whether something is true or false
+
+# syntax for the boolean value is 
+true
+false
+
+# comparison Operators
+
+> greater than
+< less than
+>= greater than or equal to
+<= lesser than or equal to
+=== equal to {===, ==}
+# here double equal should not use in js
+
+# here != not use in the js
+!== not equal to {!==, !=}
+-->
+
+<!-- 
+if statements
+---------
+syntax : if () {
+
+}
+
+() -> condition inside  boolean value  either true or false 
+
+* write the multiple group of code and then decide which code to run 
+
+* if and else are branches if is not excute else part can excute
+==========================
+if (true){
+
+console.log('hello');
+
+}
+
+o/p -> true
+
+if (false) {
+ console.log('hello');
+
+} else {
+  console.log('else'); 
+}
+
+
+* else statement code 
+ if () {
+ }
+ else {
+ }
+
+***************************
+we can have more than one condition use else if (){
+
+}
+it will another branches to the if condition.
+
+-->
+
+<!-- ******** if statement having one special features were it is scope 
+
+# then what is scope:
+- A scope is limits where a variable exists
+which means any varible we create inside{...} will only exist inside the {...}
+
+if (randomNumber >=1/3 && randomNumber < 2/3){
+const computerMove = 'Move'}
+
+{ inside the flower parenthesis is a scope  }
+ ** okea it not working it show an error computer move is not defined at HTMLButtonElement 
+
+ so how we accesss the const computerMove = '';
+ it place outside the if statment
+ 
+-->

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Quantity</title>
+</head>
+<body>
+    <!-- we use interpolation concept here -->
+    <button onclick="console.log(`Cart Quantity :${cartQuantity}`)">Show Quantity</button>
+
+    <button onclick = "cartQuantity = cartQuantity+1; 
+    // having another shortcut were as cartQuantity +=1
+    //  and another method cartQuantity++;
+    console.log(`Cart Quantity: ${cartQuantity}`)">Add to Cart</button>
+
+    <button onclick = "cartQuantity = cartQuantity +2;
+    // having another shortcut were as cartQuantity +=2
+    console.log(`Cart Quantity: ${cartQuantity}`)">+2</button>
+
+    <button onclick = "cartQuantity = cartQuantity +3;
+    // having another shortcut were as cartQuantity +=3
+    console.log(`Cart Quantity: ${cartQuantity}`)">+3</button>
+    <button onclick = "cartQuantity = 0;
+    console.log ('cart was reset');
+    console.log (`Cart Quantity:${cartQuantity}`)" >Reset Cart</button>
+
+    <script>
+      let cartQuantity = 0;
+
+    </script>
+</body>
+</html>
+
+<!-- 
+ Variable Re-assignment Shortcuts
+ +=2 variable = variable+2 
+ -=2 variable = variable-2
+ *=2 variable = variable*2
+ /=2 variable = variable/2
+ ++  variable = variable+1
+ -- variable = variable-1
+-->
+
+<!-- 
+Name Variable
+==============
+Naming Convention 
+--=-=-=-=-=-=-=-=-=-=-
+camelCase
+**********
+cartQuantity ===> capitalize every word expect the first word 
+# camelCase is the Standard for javaScript
+
+PasacalCase
+************
+CartQuantity ==> same as camelCase - excpect we capitalize first word
+
+kebab-case 
+***********
+cart-quantity  ___> doesnt working in javascript but it work in the html file name
+
+snake_case
+**********
+cart_quantity ___> doesnt working in javascript but used in the other languages
+
+==========================================
+Note: in the javascript , let can the change the variable. 
+* but in the const it cant change the variable
+
+const variable2 = 3
+ variable2 = 5
+
+ ----- it shows an error uncaught typeError Assignment to constant variable.
+
+ let we can use what value inside the variable
+ 
+ ** best practice = use const by default
+
+ var variable3 = 4;
+ var like let can change the variable in the we dont use var in new javascript code
+
+ [ Use const by default ]
+ [ if we have to change a variable then use let ]
+   
+-->
