@@ -70,6 +70,45 @@
 
         console.log(true || false);
         console.log(!true);
+
+        if (0){
+            console.log('truthy');
+
+        } 
+        if(9){
+            console.log('truthy');
+        } else if (''){
+            console.log('truthy');
+        }
+        console.log(!0); // o/p false
+        console.log('text'/5);  // NaN
+
+        let variable3;
+        console.log(variable3); // undefined but for the const we write undefined directly
+
+        const variable4 = undefined
+        console.log(variable4); 
+
+        // ternary operator; it is shortcut for the if else
+
+        const result = 0 ? 'truthy' : 'falsy';
+        console.log(result);
+
+
+        let result1 = 0;
+        // if (result1)
+        if (0){
+            result1 = 'truthy';
+        } else {
+            result1 = 'falsy';
+        }
+          console.log(result1);
+
+          const currency = 'EUR' || 'USD';
+          console.log(currency);
+
+          const currency1 = undefined || 'USD';
+          console.log(currency1);
      </script>
 
 
@@ -163,5 +202,65 @@ const computerMove = 'Move'}
 
  so how we accesss the const computerMove = '';
  it place outside the if statment
+
+-->
+
+<!-- 
+**** truthy and falsy value
+
+Falsy Value
+-----------
+false  '' 0 NaN undefined null Any value not on this list is truthy
+
+* NaN -> is not a number
+* undefined => something doesnt have a value.
+
+console.log (!0);
+o/p will be true
+example: 
  
+const cartQuantity = 5;
+ 
+if (cartQuantity){
+    console.log('cart has products');
+
+}
+
+***** in another way we see that
+
+const cartQuantity = 5;
+if (cartQuantity > 0) {
+console.log ('cart has products');
+}
+
+
+************ Guard Operator &&
+
+if initialy false it will stop the program
+
+const message = false && ('hello');
+console.log(message);
+
+false && console.log('hello');
+
+** it a shortcut like
+---=-=-=-=-=-=-=---=-=
+if (condition){
+console.log('hello');
+}
+
+===========================
+*** Default operator || is like or operator
+   
+   const currency = 'EUR' || 'USD';
+   console.log(currency);
+
+   o/p will be EUR it executed EUR it stop the program suddenly
+
+   =========================
+   shortcuts for the If-statements
+   -------------------------
+   * Ternary Operator ?:
+   * Guard Operator && 
+   * Default operato ||
 -->

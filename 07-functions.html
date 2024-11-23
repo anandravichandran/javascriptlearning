@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <script>
+        // function functionName(){
+        //     console.log('hello');
+        //     console.log('2+2');
+
+        // }
+        // functionName();
+        // functionName();
+
+        // parameters 
+        // here use that parameter we used inside a function such a variable
+        function calculateTax(paramter1){
+            console.log(paramter1*0.1);
+        }
+
+        calculateTax(2000);
+        calculateTax(5000);
+
+
+        function called(cost){
+            console.log(cost*0.1);
+        }
+        cost(2000);
+        cost(5000);
+        // # here cost  is paramter
+        // # 5000 and 2000 is a argument
+
+        function call(cost,taxpercent){
+            console.log(taxpercent); // it shows undefined
+            console.log(cost * taxpercent);
+
+        }
+        call(2000,0.3);
+        call(5000); // o/p it show taxpercent as NaN  {so how to avoid this . we going to set default value}
+        // here use that cost -> is a first paramter taxpercent -> is a second parameter
+
+        function calling (cost,taxpercent=0.1){
+            console.log(cost*taxpercent);
+            console.log(taxpercent);
+
+        }
+        calling(2000,0.2);
+        calling(5000);
+    </script>
+</body>
+</html>
+
+<!-- 
+A function let us reuse code 
+
+Rules for function names:
+1. cant use special words 
+Example: function
+function functionn(){
+}
+
+2. cant start with a number
+
+function 123function()
+{}
+
+3. cant use special characters 
+expect : $_
+
+function name !@#^%&(){}
+function two word(){}
+
+-->
+
+<!-- 
+*** Next topic parameters which is opposite to the return function;
+
+Return = gets a value out of a function
+Parameter - puts a value into a function
+-->
+
+<!-- 
+ *** Syntax rule for the paramters
+    -> parameters are similar like variable
+    -> cant use special words 
+    Example: function
+    
+    -> cant start with a number
+    -> cant use special characters 
+    Except: $_
+-->
