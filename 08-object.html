@@ -6,13 +6,47 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        // product is variable 
+        // {}  -> is object
+        const product = {
+            name:'socks',
+            price:1090,
+// name and price is property and 'socks' and 1090 is value are called as property - valued pair
+        };
+        console.log(product);
+        console.log(product.name);  // here we are accessing the property 
+        console.log(product.price); // same as we accessing the property
+
+        product.name = 'cotton socks'; // change the property name
+        console.log(product);
+         
+// product.notExist ===> undefined
+
+// access the newproperty in the object
+       product.newProperty = true;
+       console.log(product);
+
+       // delete the item in the object
+       delete product. newProperty;
+       console.log(product);
+
+       // find the type of product
+       console.log(typeof product);
+    </script>
 </body>
 </html>
 
 
 <!-- 
 # What is an object?
-An object groups multiple value together
+An object groups multiple value together.
+# an object is an another type of value
 
+-->
+
+<!-- 
+** why we use objects?
+ let us group multiple values together
+ let us use multiple values together
 -->
